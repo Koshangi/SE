@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InterviewPrep - Login</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+          :root {
+              --dark-blue: #74767a; /* Define your dark blue color here */
+          }
+          body {
+            font-family: 'Open Sans', sans-serif;
+          }
+          .interviewprep-title {
+              color: var(--dark-blue); /* Apply the variable to the title */
+          }
+        </style>
+    </head>
+    <body class="bg-blue-100 flex items-center justify-center h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <div class="flex justify-center mb-6">
+                <h1 class="font-semibold interviewprep-title">InterviewPrep</h1>
+            </div>
+        <div class="text-center mb-8">
+            <h1 class="font-semibold text-2xl mb-2">Login to Your Account</h1>
+            <p class="text-gray-600">Email/Username</p>
+            <input type="text" placeholder="Enter your email or username" class="border-2 w-full p-2 rounded mt-2 mb-4">
+            <p class="text-gray-600">Password</p>
+            <input type="password" placeholder="Enter your password" class="border-2 w-full p-2 rounded mt-2 mb-4">
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center">
+                    <input id="credentials" type="radio" name="auth" class="mr-2">
+                    <label for="credentials" class="text-sm text-blue-600">Use Credentials</label>
+                </div>
+                <div class="flex items-center">
+                    <input id="otp" type="radio" name="auth" class="mr-2">
+                    <label for="otp" class="text-sm text-blue-600">Use OTP</label>
+                </div>
+            </div>
+            <button class="bg-blue-600 text-white w-full p-3 rounded">Login</button>
+            <div class="flex justify-between items-center mt-4">
+                <a href="#" class="text-sm text-blue-600 hover:underline">Forgot Password?</a>
+                <a href="#" class="text-sm text-blue-600 hover:underline">Create Account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
