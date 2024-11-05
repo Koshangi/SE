@@ -1,0 +1,170 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+      .search-bar {
+        background: #fff;
+        border-radius: 0.375rem;
+        border: 1px solid #d1d5db;
+      }
+      .search-input {
+        width: calc(100% - 2.5rem);
+        padding: 0.5rem;
+        outline: none;
+        border: none;
+      }
+      .search-icon {
+        width: 2.5rem;
+        text-align: center;
+        line-height: 1.75rem;
+      }
+      .course-card {
+        background: #fff;
+        border-radius: 0.375rem;
+        border: 1px solid #e5e7eb;
+        padding: 1.25rem;
+      }
+      .pagination {
+        color: #9ca3af;
+        border-radius: 9999px;
+        padding: 0.25rem 0.75rem;
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-inter">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <a href="#" class="flex items-center py-4 px-2">
+                  <span class="font-semibold text-gray-500 text-lg color:text-blue-500">InterviewPrep</span>
+                </a>
+              </div>
+              <div class="hidden md:flex items-center space-x-1">
+                <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Dashboard</a>
+                <a href="#" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Courses</a>
+                <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Practice</a>
+                <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Community</a>
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-3">
+              <a href="#" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-blue-500 hover:text-white transition duration-300">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+
+    <div class="max-w-6xl mx-auto py-10">
+        <!-- Search bar -->
+        <div class="flex items-center justify-between mb-8 p-4 rounded shadow-sm search-bar">
+            <input type="text" class="search-input" placeholder="Search for courses">
+            <i class="fas fa-search text-gray-400 search-icon"></i>
+        </div>
+
+        <!-- Courses Header -->
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-2xl font-bold text-gray-900">Courses</h1>
+            <span class="text-sm text-gray-600">9 Available</span>
+        </div>
+
+        <!-- Course list -->
+        <div class="grid grid-cols-1 gap-6">
+
+            <!-- Single course -->
+            <div class="shadow-sm course-card">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="C:\Users\kosha\OneDrive\Desktop\IPS\intprac.jpg" alt="Avatar of Interview Practice instructor" class="rounded-full mr-4" width="50px">
+                        <div>
+                            <h2 class="text-lg font-semibold text-gray-800">Interview Practice</h2>
+                            <p class="text-gray-600">Mock Interviews</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                    <p class="text-gray-600">Realistic Interview</p>
+                    <p class="text-gray-400">Practice Session Time</p>
+                </div>
+            </div>
+            <div class="shadow-sm course-card">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="C:\Users\kosha\OneDrive\Desktop\IPS\coding.jpg" alt="Avatar of Coding Interview instructor" class="rounded-full mr-4" width="50px">
+                        <div>
+                            <h2 class="text-lg font-semibold text-gray-800">Coding Interview Prep</h2>
+                            <p class="text-gray-600">Data Structures & Algorithms</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                    <p class="text-gray-600">Hands-on Coding</p>
+                    <p class="text-gray-400">Interactive Sessions</p>
+                </div>
+            </div>
+        
+            <div class="shadow-sm course-card">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="C:\Users\kosha\OneDrive\Desktop\IPS\Systems+Design.png" alt="Avatar of System Design instructor" class="rounded-full mr-4" width="50px">
+                        <div>
+                            <h2 class="text-lg font-semibold text-gray-800">System Design Mastery</h2>
+                            <p class="text-gray-600">Design Scalable Systems</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                    <p class="text-gray-600">Real-world Scenarios</p>
+                    <p class="text-gray-400">Project-based Learning</p>
+                </div>
+            </div>
+        
+            <div class="shadow-sm course-card">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="C:\Users\kosha\OneDrive\Desktop\IPS\bi.jpg" alt="Avatar of Behavioral Interview instructor" class="rounded-full mr-4" width="50px">
+                        <div>
+                            <h2 class="text-lg font-semibold text-gray-800">Behavioral Interview Strategies</h2>
+                            <p class="text-gray-600">Ace Your Interviews</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                    <p class="text-gray-600">Interview Techniques</p>
+                    <p class="text-gray-400">Confidence Building</p>
+                </div>
+            </div>
+        
+         
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-between text-sm mt-6">
+                <a href="#" class="pagination">&#8592; prev</a>
+                <div class="flex gap-2">
+                    <a href="#" class="pagination">1</a>
+                    <a href="#" class="pagination">2</a>
+                    <a href="#" class="pagination">3</a>
+                </div>
+                <a href="#" class="pagination">next &#8594;</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
